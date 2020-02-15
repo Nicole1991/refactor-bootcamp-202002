@@ -28,4 +28,16 @@ public class CalculateFibonacciTest {
         //then
         assertEquals(2, result);
     }
+
+    @Test
+    public void should_return_3_when_calculate_given_position_is_4() {
+        //given
+        CalculateFibonacci calculateFibonacci = new CalculateFibonacci();
+
+        //when
+        int result = calculateFibonacci.calculate(4);
+
+        //then
+        assertEquals(3, result);
+    }
 }
