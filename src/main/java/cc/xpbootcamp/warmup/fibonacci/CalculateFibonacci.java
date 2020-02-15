@@ -1,10 +1,10 @@
 package cc.xpbootcamp.warmup.fibonacci;
 
 public class CalculateFibonacci {
-    public int calculate(int position) {
-        if (position == 3) {
-            return 2;
+    public Long calculate(int position) {
+        if (position < 2) {
+            return (long) position;
         }
-        return 1;
+        return calculate(position - 1) + calculate(position - 2);
     }
 }

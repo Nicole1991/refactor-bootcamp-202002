@@ -11,7 +11,7 @@ public class CalculateFibonacciTest {
         CalculateFibonacci calculateFibonacci = new CalculateFibonacci();
 
         //when
-        int result = calculateFibonacci.calculate(1);
+        long result = calculateFibonacci.calculate(1);
 
         //then
         assertEquals(1, result);
@@ -23,7 +23,7 @@ public class CalculateFibonacciTest {
         CalculateFibonacci calculateFibonacci = new CalculateFibonacci();
 
         //when
-        int result = calculateFibonacci.calculate(3);
+        long result = calculateFibonacci.calculate(3);
 
         //then
         assertEquals(2, result);
@@ -35,9 +35,21 @@ public class CalculateFibonacciTest {
         CalculateFibonacci calculateFibonacci = new CalculateFibonacci();
 
         //when
-        int result = calculateFibonacci.calculate(4);
+        long result = calculateFibonacci.calculate(4);
 
         //then
         assertEquals(3, result);
+    }
+
+    @Test
+    public void should_return_12586269025L_when_calculate_given_position_is_50() {
+        //given
+        CalculateFibonacci calculateFibonacci = new CalculateFibonacci();
+
+        //when
+        long result = calculateFibonacci.calculate(50);
+
+        //then
+        assertEquals(12586269025L, result);
     }
 }
