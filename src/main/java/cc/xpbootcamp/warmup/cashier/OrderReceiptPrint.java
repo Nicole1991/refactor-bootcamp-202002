@@ -7,10 +7,10 @@ package cc.xpbootcamp.warmup.cashier;
  * total sales tax) and prints it.
  *
  */
-public class OrderReceipt {
+public class OrderReceiptPrint {
     private Order order;
 
-    public OrderReceipt(Order order) {
+    public OrderReceiptPrint(Order order) {
         this.order = order;
     }
 
